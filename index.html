@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam, quieres volver a ser mi novia?</title>
+    <style>
+      .body {
+        background-color: darkorange;
+        text-align: center;
+      }
+
+    .body__tittle{
+        color: blanchedalmond;
+    }
+      
+    .body__img{
+        width: 100%;
+        border-radius: 0%;
+    }
+    </style>
+</head>
+
+<body class="body">
+  <h1 class="body__tittle">Sam, quieres volver a ser mi novia?</h1>  
+<img 
+src="https://assets.puzzlefactory.pl/puzzle/425/224/original.jpg" 
+alt="Lugar donde te hare mia" class="body__img"> 
+<button id="yes">Si quiero</button>
+<button id="no">Ya no quiero</button>
+
+<script>
+    const vutonSi = document.getElementById('yes');
+    const vutonNo = document.getElementById('no');
+
+const siaceptaserminovia = () => {
+    alert('Me hace feliz que vuelvas hacer mi novia mi princesita hermosa');
+    alert('Eres la unica niña con la que quiero estar mi bebe, eres y seras el amor de mi vida');
+    location.href = 'https://www.youtube.com/watch?v=nGMIxUsU62I=20s'
+    }
+
+    const evitarquenoquiera  = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+        vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+    }
+
+    vutonSi.addEventListener('click', siaceptaserminovia);
+    vutonNo.addEventListener('mouseover',evitarquenoquiera);
+</script>
+</body>
+
+</html>
